@@ -1,0 +1,38 @@
+diff --git a/litex/build/xilinx/yosys_nextpnr.py b/litex/build/xilinx/yosys_nextpnr.py
+index a1214cd1..0ccddceb 100644
+--- a/litex/build/xilinx/yosys_nextpnr.py
++++ b/litex/build/xilinx/yosys_nextpnr.py
+@@ -113,6 +113,7 @@ class YosysNextpnrToolchain:
+                     "xc7a100tcsg324-1"  : "xc7a35t",
+                     "xc7z010clg400-1"   : "xc7z010",
+                     "xc7z020clg400-1"   : "xc7z020",
++                    "xc7k325tffg676-1"  : "xc7k325tffg676-1",
+                 }[platform.device]
+             except KeyError:
+                 raise ValueError(f"symbiflow_device is not specified")
+@@ -123,6 +124,7 @@ class YosysNextpnrToolchain:
+                 self.bitstream_device = {
+                     "xc7a": "artix7", # xc7a35t, xc7a50t, xc7a100t, xc7a200t
+                     "xc7z": "zynq7", # xc7z010, xc7z020
++                    "xc7k": "kintex7", # xc7k325t
+                 }[platform.device[:4]]
+             except KeyError:
+                 raise ValueError(f"Unsupported device: {platform.device}")
+@@ -133,6 +135,7 @@ class YosysNextpnrToolchain:
+             "xc7a200t-sbg484-1" : "xc7a200tsbg484-1",
+             "xc7z010clg400-1"   : "xc7z010clg400-1",
+             "xc7z020clg400-1"   : "xc7z020clg400-1",
++            "xc7k325tffg676-1"  : "xc7k325tffg676-1",
+         }.get(platform.device, platform.device)
+ 
+     def _generate_makefile(self, platform, build_name):
+@@ -163,7 +166,8 @@ class YosysNextpnrToolchain:
+             Rule("$(TOP).json", ["$(VERILOG)", "$(MEM_INIT)", "$(XDC)"], commands=[
+                     #"symbiflow_synth -t $(TOP) -v $(VERILOG) -d $(BITSTREAM_DEVICE) -p $(PARTNAME) -x $(XDC) > /dev/null"
+                     #yosys -p "synth_xilinx -flatten -abc9 -nosrl -noclkbuf -nodsp -iopad -nowidelut" #forum: symbiflow_synth
+-                    'yosys -p "synth_xilinx -flatten -abc9 -nobram -arch xc7 -top $(TOP); write_json $(TOP).json" $(VERILOG) > /dev/null'
++                    #'yosys -p "synth_xilinx -flatten -abc9 -nobram -arch xc7 -top $(TOP); write_json $(TOP).json" $(VERILOG) > /dev/null'
++                    'yosys -p "synth_xilinx -flatten -abc9 -arch xc7 -top $(TOP); write_json $(TOP).json" $(VERILOG) > /dev/null'
+                 ]),
+             Rule("$(TOP).fasm", ["$(TOP).json"], commands=[
+                     #"symbiflow_write_fasm -e $(TOP).eblif -d $(DEVICE) > /dev/null"
