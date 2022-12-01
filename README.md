@@ -4,6 +4,15 @@ A workspace for @hansfbaier's prjxray DB / kintex7.
 
 ## ChangeLog
 
+
+[Dez 01]
+
+* Use latest database from the CI run of the prjxray upstream merge,
+  except changes from this issue:
+  https://github.com/f4pga/prjxray/issues/2061
+
+* add XC7K160T files from upstream prjxray db
+
 [Mar 28]
 
 * Add xc7k325tffg676-1 from the old database.
