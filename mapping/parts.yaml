@@ -222,6 +222,134 @@ xc7k325tffv900-3:
   device: xc7k325t
   package: ffv900
   speedgrade: '3'
+xc7k420tffg1156-1:
+  device: xc7k420t
+  package: ffg1156
+  speedgrade: '1'
+xc7k420tffg1156-2:
+  device: xc7k420t
+  package: ffg1156
+  speedgrade: '2'
+xc7k420tffg1156-2L:
+  device: xc7k420t
+  package: ffg1156
+  speedgrade: 2L
+xc7k420tffg1156-3:
+  device: xc7k420t
+  package: ffg1156
+  speedgrade: '3'
+xc7k420tffg901-1:
+  device: xc7k420t
+  package: ffg901
+  speedgrade: '1'
+xc7k420tffg901-2:
+  device: xc7k420t
+  package: ffg901
+  speedgrade: '2'
+xc7k420tffg901-2L:
+  device: xc7k420t
+  package: ffg901
+  speedgrade: 2L
+xc7k420tffg901-3:
+  device: xc7k420t
+  package: ffg901
+  speedgrade: '3'
+xc7k420tffv1156-1:
+  device: xc7k420t
+  package: ffv1156
+  speedgrade: '1'
+xc7k420tffv1156-2:
+  device: xc7k420t
+  package: ffv1156
+  speedgrade: '2'
+xc7k420tffv1156-2L:
+  device: xc7k420t
+  package: ffv1156
+  speedgrade: 2L
+xc7k420tffv1156-3:
+  device: xc7k420t
+  package: ffv1156
+  speedgrade: '3'
+xc7k420tffv901-1:
+  device: xc7k420t
+  package: ffv901
+  speedgrade: '1'
+xc7k420tffv901-2:
+  device: xc7k420t
+  package: ffv901
+  speedgrade: '2'
+xc7k420tffv901-2L:
+  device: xc7k420t
+  package: ffv901
+  speedgrade: 2L
+xc7k420tffv901-3:
+  device: xc7k420t
+  package: ffv901
+  speedgrade: '3'
+xc7k480tffg1156-1:
+  device: xc7k480t
+  package: ffg1156
+  speedgrade: '1'
+xc7k480tffg1156-2:
+  device: xc7k480t
+  package: ffg1156
+  speedgrade: '2'
+xc7k480tffg1156-2L:
+  device: xc7k480t
+  package: ffg1156
+  speedgrade: 2L
+xc7k480tffg1156-3:
+  device: xc7k480t
+  package: ffg1156
+  speedgrade: '3'
+xc7k480tffg901-1:
+  device: xc7k480t
+  package: ffg901
+  speedgrade: '1'
+xc7k480tffg901-2:
+  device: xc7k480t
+  package: ffg901
+  speedgrade: '2'
+xc7k480tffg901-2L:
+  device: xc7k480t
+  package: ffg901
+  speedgrade: 2L
+xc7k480tffg901-3:
+  device: xc7k480t
+  package: ffg901
+  speedgrade: '3'
+xc7k480tffv1156-1:
+  device: xc7k480t
+  package: ffv1156
+  speedgrade: '1'
+xc7k480tffv1156-2:
+  device: xc7k480t
+  package: ffv1156
+  speedgrade: '2'
+xc7k480tffv1156-2L:
+  device: xc7k480t
+  package: ffv1156
+  speedgrade: 2L
+xc7k480tffv1156-3:
+  device: xc7k480t
+  package: ffv1156
+  speedgrade: '3'
+xc7k480tffv901-1:
+  device: xc7k480t
+  package: ffv901
+  speedgrade: '1'
+xc7k480tffv901-2:
+  device: xc7k480t
+  package: ffv901
+  speedgrade: '2'
+xc7k480tffv901-2L:
+  device: xc7k480t
+  package: ffv901
+  speedgrade: 2L
+xc7k480tffv901-3:
+  device: xc7k480t
+  package: ffv901
+  speedgrade: '3'
 xc7k70tfbg484-1:
   device: xc7k70t
   package: fbg484
